@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :contract, dependent: :destroy
+  has_many :contracts, dependent: :destroy
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i.freeze
   validates :name,     presence: true
